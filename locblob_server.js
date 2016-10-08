@@ -3,7 +3,7 @@ var grpc = require('grpc');
 var locblob = grpc.load('locblob.proto').locblob;
 
 function currentLocation(call, callback) {
-  callback(null, {message: call.request.longitute});
+  callback(null, {uid: 'dasijo02j'});
 }
 
 function main() {
