@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service CurrentLocationService {
+  rpc CurrentLocation (CurrentLocationRequest) returns (CurrentLocationResponse);
+}
+
+message CurrentLocationRequest {
+  float longitude = 1;
+  float latitude = 2;
+}
+
+message CurrentLocationResponse {
+  string id = 1;
+}
